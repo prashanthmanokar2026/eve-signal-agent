@@ -1,0 +1,28 @@
+{
+  "echo": {
+    "missions": 30,
+    "success_rate": 0.9,
+    "mean_actions": 64.2,
+    "mean_energy_consumed": 69.6,
+    "mean_scans": 7.0,
+    "mean_localization_error": 0.0,
+    "outcomes": {
+      "found": 27,
+      "time_limit": 2,
+      "returned": 1
+    }
+  },
+  "baseline": {
+    "missions": 30,
+    "success_rate": 0.6666666666666666,
+    "mean_actions": 105.9,
+    "mean_energy_consumed": 102.86666666666666,
+    "mean_scans": 0.0,
+    "mean_localization_error": 0.06666666666666667,
+    "outcomes": {
+      "returned": 9,
+      "found": 20,
+      "time_limit": 1
+    }
+  }
+}

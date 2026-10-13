@@ -1,0 +1,82 @@
+{
+  "observation": {
+    "position": [
+      0,
+      0
+    ],
+    "battery": 36,
+    "time_remaining": 170,
+    "actions": 0,
+    "terrain": [
+      {
+        "cell": [
+          0,
+          0
+        ],
+        "kind": "C"
+      },
+      {
+        "cell": [
+          1,
+          0
+        ],
+        "kind": "."
+      },
+      {
+        "cell": [
+          0,
+          1
+        ],
+        "kind": "."
+      }
+    ],
+    "clues": [],
+    "contact": null,
+    "outcome": "searching"
+  },
+  "briefing": {
+    "width": 10,
+    "height": 8,
+    "name": "False Echo",
+    "start": [
+      0,
+      0
+    ],
+    "battery_capacity": 36,
+    "time_budget": 170,
+    "action_costs": {
+      "move": [
+        1,
+        1
+      ],
+      "scan": [
+        2,
+        1
+      ],
+      "investigate": [
+        1,
+        1
+      ],
+      "recharge": [
+        0,
+        3
+      ],
+      "end": [
+        0,
+        0
+      ]
+    },
+    "sensor": {
+      "outlier_rate": 0.3
+    },
+    "mission_time": 0,
+    "initial_signal": {
+      "coordinates": [
+        8,
+        1
+      ],
+      "strength": 0.98,
+      "timestamp": 0
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#243e34"><title>ECHO — Finding EVE</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/" aria-label="ECHO home"><span class="brandmark">e</span> ECHO<span class="brand-sub">FINDING EVE</span></a><div class="header-note"><span class="live-dot"></span> AUTONOMOUS FIELD LAB <span class="version">/ 01</span></div></header>
+<main>
+<section class="intro"><div><div class="eyebrow">A SEARCH UNDER UNCERTAINTY</div><h1>A faint signal.<br>A reason to keep looking.</h1><p>Explore the unknown. Follow the evidence. Know when to turn back.</p></div><div class="mission-select"><label for="mission">MISSION BRIEFING</label><select id="mission" disabled><option>Loading missions…</option></select><p id="description">A local simulation of belief, exploration and limited resources.</p></div></section>
+<div id="error" role="alert" hidden></div>
+<section class="console" aria-label="Mission console">
+<div class="field">
+<div class="panel-heading"><div><span class="eyebrow">01 / FIELD OBSERVATION</span><h2 id="mission-title">Preparing the field</h2></div><span id="status" class="status">READY</span></div>
+<div class="map-wrap"><svg id="map" role="img" aria-label="Observed terrain, belief heatmap and robot path"></svg><div class="map-caption"><span>ONLY OBSERVED TERRAIN IS REVEALED</span><span id="coords">X 00 · Y 00</span></div></div>
+<div class="legend"><span><i class="unknown"></i>Unknown</span><span><i class="obstacle"></i>Obstacle</span><span><i class="charger"></i>Charger</span><span><i class="clue"></i>Clue</span><span><i class="trail"></i>Path</span><label><input id="heatmap" type="checkbox" checked> Belief heatmap</label></div>
+<div class="heat-scale"><span>Location probability</span><div></div><span id="peak">0%</span></div>
+<div class="controls"><button id="play" class="primary" disabled>▶ Start search</button><button id="step" disabled>Single step →</button><button id="reset" class="quiet" disabled>↺ Reset</button><label for="speed">Speed <select id="speed" aria-label="Speed"><option value="1000">1×</option><option value="400" selected>2×</option><option value="90">8×</option></select></label></div>
+</div>
+<aside>
+<div class="panel-heading"><div><span class="eyebrow">02 / LIVE TELEMETRY</span><h2>Every move has a cost.</h2></div></div>
+<div class="telemetry"><div><span>BATTERY</span><strong id="battery">—</strong><div class="meter"><i id="battery-bar"></i></div></div><div><span>TIME LEFT</span><strong id="time">—</strong><small>mission units</small></div><div><span>ACTIONS</span><strong id="actions">0</strong><small>executed by the agent</small></div><div><span>TOP CELL BELIEF</span><strong id="confidence">—</strong><small id="estimate">unconfirmed</small></div></div>
+<div class="reasoning"><span class="eyebrow">LATEST AGENT DECISION</span><h3 id="action">Awaiting first observation</h3><p id="reason">Start the mission or advance a single step to see an autonomous decision.</p><div class="decision-facts" id="facts"></div></div>
+<div class="observation"><span class="eyebrow">LATEST OBSERVATION</span><p id="observation">The first few tiles are visible. Everything else must be discovered.</p></div>
+<div class="belief-change"><span class="eyebrow">BELIEF REVISION</span><p id="revision">New measurements will change the location estimate.</p></div>
+<div class="status-belief"><span class="eyebrow">EVE'S STATUS · INFERRED</span><div id="status-beliefs"></div></div>
+</aside>
+</section>
+<section class="bottom-row"><div class="journal"><div class="panel-heading"><div><span class="eyebrow">03 / DECISION JOURNAL</span><h2>The evidence leaves a trail.</h2></div><button id="download" disabled>↓ Export run</button></div><div id="journal"><p class="empty">Your mission log will appear here. No scripted outcomes.</p></div></div><div class="report"><span class="eyebrow">04 / MISSION REPORT</span><h2 id="report-title">The search is still open.</h2><p id="report-text">Finding a likely cell isn't the same as finding EVE. Contact must be confirmed in the environment.</p><div id="report-details"></div></div></section>
+<footer><span>ECHO / An autonomous search agent that reasons under uncertainty.</span><span>LOCAL PYTHON SIMULATION · NO API KEYS</span></footer>
+</main></body></html>

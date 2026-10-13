@@ -1,0 +1,54 @@
+{
+  "name": "The Last Charge",
+  "seed": 11,
+  "grid": [
+    "C...#......",
+    "....#......",
+    "..C........",
+    "....#..#...",
+    ".......#...",
+    "...#..C....",
+    "...#.......",
+    "..........."
+  ],
+  "start": [
+    0,
+    0
+  ],
+  "eve": [
+    9,
+    6
+  ],
+  "clues": [
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      8,
+      6
+    ]
+  ],
+  "eve_status": "ready",
+  "battery_capacity": 20,
+  "initial_battery": 8,
+  "time_budget": 180,
+  "sensor": {
+    "outlier_rate": 0.15
+  },
+  "initial_signal": {
+    "direction": "E",
+    "strength": 0.4,
+    "timestamp": 0
+  },
+  "mission_time": 0,
+  "max_actions": 200
+}

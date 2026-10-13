@@ -1,0 +1,79 @@
+{
+  "observation": {
+    "position": [
+      0,
+      0
+    ],
+    "battery": 34,
+    "time_remaining": 140,
+    "actions": 0,
+    "terrain": [
+      {
+        "cell": [
+          0,
+          0
+        ],
+        "kind": "C"
+      },
+      {
+        "cell": [
+          1,
+          0
+        ],
+        "kind": "."
+      },
+      {
+        "cell": [
+          0,
+          1
+        ],
+        "kind": "."
+      }
+    ],
+    "clues": [],
+    "contact": null,
+    "outcome": "searching"
+  },
+  "briefing": {
+    "width": 9,
+    "height": 7,
+    "name": "First Contact",
+    "start": [
+      0,
+      0
+    ],
+    "battery_capacity": 34,
+    "time_budget": 140,
+    "action_costs": {
+      "move": [
+        1,
+        1
+      ],
+      "scan": [
+        2,
+        1
+      ],
+      "investigate": [
+        1,
+        1
+      ],
+      "recharge": [
+        0,
+        3
+      ],
+      "end": [
+        0,
+        0
+      ]
+    },
+    "sensor": {
+      "outlier_rate": 0.12
+    },
+    "mission_time": 0,
+    "initial_signal": {
+      "direction": "E",
+      "strength": 0.55,
+      "timestamp": 0
+    }
+  }
+}

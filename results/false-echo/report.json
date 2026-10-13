@@ -1,0 +1,777 @@
+{
+  "mission": "False Echo",
+  "agent": "echo",
+  "outcome": "found",
+  "confirmed": true,
+  "estimated_location": [
+    2,
+    6
+  ],
+  "confidence": 1.0,
+  "estimated_status": "damaged",
+  "status_probabilities": {
+    "ready": 0.0,
+    "stranded": 0.0,
+    "damaged": 1.0
+  },
+  "actions": 44,
+  "energy_consumed": 47,
+  "battery_remaining": 23,
+  "time_used": 46,
+  "time_remaining": 124,
+  "scans": 4,
+  "clues_investigated": 3,
+  "evidence": [
+    {
+      "type": "scan",
+      "origin": [
+        0,
+        0
+      ],
+      "range": 8,
+      "outlier_rate": 0.3,
+      "strength": 0.5,
+      "timestamp": 1
+    },
+    {
+      "type": "scan",
+      "origin": [
+        3,
+        0
+      ],
+      "range": 7,
+      "outlier_rate": 0.3,
+      "strength": 0.5625,
+      "timestamp": 5
+    },
+    {
+      "type": "clue",
+      "cell": [
+        4,
+        0
+      ],
+      "signal": {
+        "origin": [
+          4,
+          0
+        ],
+        "range": 8,
+        "outlier_rate": 0.04,
+        "strength": 0.5,
+        "timestamp": 7
+      },
+      "status_hint": "damaged",
+      "status_reliability": 0.8
+    },
+    {
+      "type": "scan",
+      "origin": [
+        4,
+        2
+      ],
+      "range": 8,
+      "outlier_rate": 0.3,
+      "strength": 0.5,
+      "timestamp": 10
+    },
+    {
+      "type": "clue",
+      "cell": [
+        5,
+        3
+      ],
+      "signal": {
+        "origin": [
+          5,
+          3
+        ],
+        "range": 7,
+        "outlier_rate": 0.04,
+        "strength": 0.5625,
+        "timestamp": 13
+      },
+      "status_hint": "stranded",
+      "status_reliability": 0.8
+    },
+    {
+      "type": "scan",
+      "origin": [
+        4,
+        5
+      ],
+      "range": 3,
+      "outlier_rate": 0.3,
+      "strength": 0.8125,
+      "timestamp": 17
+    },
+    {
+      "type": "clue",
+      "cell": [
+        3,
+        6
+      ],
+      "signal": {
+        "origin": [
+          3,
+          6
+        ],
+        "range": 6,
+        "outlier_rate": 0.04,
+        "strength": 0.625,
+        "timestamp": 45
+      },
+      "status_hint": "damaged",
+      "status_reliability": 0.8
+    }
+  ],
+  "belief_recoveries": 0,
+  "key_decisions": [
+    {
+      "step": 2,
+      "action": {
+        "kind": "move",
+        "to": [
+          1,
+          0
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        1,
+        0
+      ],
+      "previous_target": [
+        0,
+        0
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          8,
+          0
+        ],
+        "confidence": 0.22106726465302193,
+        "entropy_bits": 3.7335224755833356,
+        "status": {
+          "ready": 0.3333333333333333,
+          "stranded": 0.3333333333333333,
+          "damaged": 0.3333333333333333
+        },
+        "recoveries": 0
+      },
+      "return_energy": 0,
+      "battery": 34,
+      "time_remaining": 169,
+      "score": 0.45568967533211113,
+      "belief_mass": 0.01594827922201852,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 2
+    },
+    {
+      "step": 3,
+      "action": {
+        "kind": "move",
+        "to": [
+          2,
+          0
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        2,
+        0
+      ],
+      "previous_target": [
+        1,
+        0
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          8,
+          0
+        ],
+        "confidence": 0.22112242007343116,
+        "entropy_bits": 3.731107840440266,
+        "status": {
+          "ready": 0.3333333333333333,
+          "stranded": 0.3333333333333333,
+          "damaged": 0.3333333333333333
+        },
+        "recoveries": 0
+      },
+      "return_energy": 1,
+      "battery": 33,
+      "time_remaining": 168,
+      "score": 0.4838819229057202,
+      "belief_mass": 0.02064698715095336,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 3
+    },
+    {
+      "step": 4,
+      "action": {
+        "kind": "move",
+        "to": [
+          3,
+          0
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        3,
+        0
+      ],
+      "previous_target": [
+        2,
+        0
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          8,
+          0
+        ],
+        "confidence": 0.22118162845307635,
+        "entropy_bits": 3.728543063723802,
+        "status": {
+          "ready": 0.3333333333333333,
+          "stranded": 0.3333333333333333,
+          "damaged": 0.3333333333333333
+        },
+        "recoveries": 0
+      },
+      "return_energy": 2,
+      "battery": 32,
+      "time_remaining": 167,
+      "score": 0.5273658813645025,
+      "belief_mass": 0.027894313560750422,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 4
+    },
+    {
+      "step": 6,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          0
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        0
+      ],
+      "previous_target": [
+        3,
+        0
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          8,
+          1
+        ],
+        "confidence": 0.22095588834061697,
+        "entropy_bits": 3.8988311393026414,
+        "status": {
+          "ready": 0.3333333333333333,
+          "stranded": 0.3333333333333333,
+          "damaged": 0.3333333333333333
+        },
+        "recoveries": 0
+      },
+      "return_energy": 3,
+      "battery": 29,
+      "time_remaining": 165,
+      "score": 1.1818410026307384,
+      "belief_mass": 0.028640167105123064,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 5
+    },
+    {
+      "step": 8,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          1
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        1
+      ],
+      "previous_target": [
+        4,
+        0
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5705335861838564,
+        "entropy_bits": 2.7933887646188036,
+        "status": {
+          "ready": 0.1,
+          "stranded": 0.1,
+          "damaged": 0.8
+        },
+        "recoveries": 0
+      },
+      "return_energy": 4,
+      "battery": 27,
+      "time_remaining": 163,
+      "score": 0.465878377889415,
+      "belief_mass": 0.01764639631490251,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 6
+    },
+    {
+      "step": 9,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          2
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        2
+      ],
+      "previous_target": [
+        4,
+        1
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5705473675787734,
+        "entropy_bits": 2.7930509138405073,
+        "status": {
+          "ready": 0.1,
+          "stranded": 0.1,
+          "damaged": 0.8
+        },
+        "recoveries": 0
+      },
+      "return_energy": 5,
+      "battery": 26,
+      "time_remaining": 162,
+      "score": 0.6337462364518411,
+      "belief_mass": 0.022707706075306856,
+      "novelty": 0.75,
+      "travel_steps": 1,
+      "required_energy": 7
+    },
+    {
+      "step": 11,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          3
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        3
+      ],
+      "previous_target": [
+        4,
+        2
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.3758500437692964,
+        "entropy_bits": 3.2773270861008483,
+        "status": {
+          "ready": 0.1,
+          "stranded": 0.1,
+          "damaged": 0.8
+        },
+        "recoveries": 0
+      },
+      "return_energy": 6,
+      "battery": 23,
+      "time_remaining": 160,
+      "score": 0.6519072068544621,
+      "belief_mass": 0.025734534475743684,
+      "novelty": 0.75,
+      "travel_steps": 1,
+      "required_energy": 8
+    },
+    {
+      "step": 12,
+      "action": {
+        "kind": "move",
+        "to": [
+          5,
+          3
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        5,
+        3
+      ],
+      "previous_target": [
+        4,
+        3
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.3758620919651304,
+        "entropy_bits": 3.276907332472269,
+        "status": {
+          "ready": 0.1,
+          "stranded": 0.1,
+          "damaged": 0.8
+        },
+        "recoveries": 0
+      },
+      "return_energy": 7,
+      "battery": 22,
+      "time_remaining": 159,
+      "score": 1.1521639972546638,
+      "belief_mass": 0.02369399954244395,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 9
+    },
+    {
+      "step": 14,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          3
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        4
+      ],
+      "previous_target": [
+        5,
+        3
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          1,
+          6
+        ],
+        "confidence": 0.2936451173350169,
+        "entropy_bits": 2.2839793172268146,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 8,
+      "battery": 20,
+      "time_remaining": 157,
+      "score": 0.5026567561062287,
+      "belief_mass": 0.029609459351038106,
+      "novelty": 0.5,
+      "travel_steps": 2,
+      "required_energy": 10
+    },
+    {
+      "step": 16,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          5
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        5
+      ],
+      "previous_target": [
+        4,
+        4
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          1,
+          6
+        ],
+        "confidence": 0.2936452779699874,
+        "entropy_bits": 2.2839683980398098,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 8,
+      "battery": 18,
+      "time_remaining": 155,
+      "score": 0.7559841050199894,
+      "belief_mass": 0.04308068416999823,
+      "novelty": 0.75,
+      "travel_steps": 1,
+      "required_energy": 10
+    },
+    {
+      "step": 18,
+      "action": {
+        "kind": "move",
+        "to": [
+          4,
+          6
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        4,
+        6
+      ],
+      "previous_target": [
+        4,
+        5
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5050113115019396,
+        "entropy_bits": 1.8737904199696236,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 9,
+      "battery": 15,
+      "time_remaining": 153,
+      "score": 1.015438713421439,
+      "belief_mass": 0.08632311890357319,
+      "novelty": 0.75,
+      "travel_steps": 1,
+      "required_energy": 11
+    },
+    {
+      "step": 19,
+      "action": {
+        "kind": "move",
+        "to": [
+          3,
+          6
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        3,
+        6
+      ],
+      "previous_target": [
+        4,
+        6
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5050113319581906,
+        "entropy_bits": 1.8737894427022062,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 10,
+      "battery": 14,
+      "time_remaining": 152,
+      "score": 2.0936541310520447,
+      "belief_mass": 0.18060902184200744,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 12
+    },
+    {
+      "step": 20,
+      "action": {
+        "kind": "move",
+        "to": [
+          3,
+          5
+        ]
+      },
+      "objective": "Return to safety before spending the remaining reserve",
+      "target": [
+        0,
+        0
+      ],
+      "previous_target": [
+        3,
+        6
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5050598393090232,
+        "entropy_bits": 1.8725489503071548,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 11,
+      "battery": 13,
+      "time_remaining": 151
+    },
+    {
+      "step": 31,
+      "action": {
+        "kind": "recharge"
+      },
+      "objective": "Recharge at the discovered station before another search",
+      "target": null,
+      "previous_target": [
+        0,
+        0
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5051084857492749,
+        "entropy_bits": 1.8713022637931553,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 0,
+      "battery": 2,
+      "time_remaining": 140
+    },
+    {
+      "step": 43,
+      "action": {
+        "kind": "investigate"
+      },
+      "objective": "Inspect a discovered clue: more reliable range and status evidence",
+      "target": [
+        3,
+        6
+      ],
+      "previous_target": [
+        2,
+        6
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.5051084857492749,
+        "entropy_bits": 1.8713022637931553,
+        "status": {
+          "ready": 0.058823529411764705,
+          "stranded": 0.47058823529411764,
+          "damaged": 0.47058823529411764
+        },
+        "recoveries": 0
+      },
+      "return_energy": 11,
+      "battery": 25,
+      "time_remaining": 126
+    },
+    {
+      "step": 44,
+      "action": {
+        "kind": "move",
+        "to": [
+          2,
+          6
+        ]
+      },
+      "objective": "Search where belief, new terrain and clues justify the travel cost",
+      "target": [
+        2,
+        6
+      ],
+      "previous_target": [
+        3,
+        6
+      ],
+      "target_changed": true,
+      "belief": {
+        "location": [
+          2,
+          6
+        ],
+        "confidence": 0.455635802356168,
+        "entropy_bits": 2.3151226714179076,
+        "status": {
+          "ready": 0.013698630136986302,
+          "stranded": 0.10958904109589042,
+          "damaged": 0.8767123287671234
+        },
+        "recoveries": 0
+      },
+      "return_energy": 11,
+      "battery": 24,
+      "time_remaining": 125,
+      "score": 3.715623303281986,
+      "belief_mass": 0.5592705505469977,
+      "novelty": 0.5,
+      "travel_steps": 1,
+      "required_energy": 13
+    }
+  ],
+  "recommended_next_step": "Request a repair/recovery team at EVE's confirmed location."
+}

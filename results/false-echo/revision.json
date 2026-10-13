@@ -1,0 +1,154 @@
+{
+  "initial_belief": {
+    "location": [
+      8,
+      1
+    ],
+    "confidence": 0.07582767921140028,
+    "entropy_bits": 5.0859897196651715,
+    "status": {
+      "ready": 0.3333333333333333,
+      "stranded": 0.3333333333333333,
+      "damaged": 0.3333333333333333
+    },
+    "recoveries": 0
+  },
+  "initial_movement_target": [
+    1,
+    0
+  ],
+  "step": 7,
+  "target_before_clue": [
+    4,
+    0
+  ],
+  "belief_before": {
+    "location": [
+      8,
+      1
+    ],
+    "confidence": 0.22099707396639393,
+    "entropy_bits": 3.896979591733515,
+    "status": {
+      "ready": 0.3333333333333333,
+      "stranded": 0.3333333333333333,
+      "damaged": 0.3333333333333333
+    },
+    "recoveries": 0
+  },
+  "new_observation": {
+    "cell": [
+      4,
+      0
+    ],
+    "signal": {
+      "origin": [
+        4,
+        0
+      ],
+      "range": 8,
+      "outlier_rate": 0.04,
+      "strength": 0.5,
+      "timestamp": 7
+    },
+    "status_hint": "damaged",
+    "status_reliability": 0.8
+  },
+  "belief_after": {
+    "location": [
+      2,
+      6
+    ],
+    "confidence": 0.5705335861838564,
+    "entropy_bits": 2.7933887646188036,
+    "status": {
+      "ready": 0.1,
+      "stranded": 0.1,
+      "damaged": 0.8
+    },
+    "recoveries": 0
+  },
+  "next_decision": {
+    "action": {
+      "kind": "move",
+      "to": [
+        4,
+        1
+      ]
+    },
+    "objective": "Search where belief, new terrain and clues justify the travel cost",
+    "target": [
+      4,
+      1
+    ],
+    "previous_target": [
+      4,
+      0
+    ],
+    "target_changed": true,
+    "belief": {
+      "location": [
+        2,
+        6
+      ],
+      "confidence": 0.5705335861838564,
+      "entropy_bits": 2.7933887646188036,
+      "status": {
+        "ready": 0.1,
+        "stranded": 0.1,
+        "damaged": 0.8
+      },
+      "recoveries": 0
+    },
+    "return_energy": 4,
+    "battery": 27,
+    "time_remaining": 163,
+    "score": 0.465878377889415,
+    "belief_mass": 0.01764639631490251,
+    "novelty": 0.5,
+    "travel_steps": 1,
+    "required_energy": 6
+  },
+  "without_clue_decision": {
+    "action": {
+      "kind": "move",
+      "to": [
+        5,
+        0
+      ]
+    },
+    "objective": "Search where belief, new terrain and clues justify the travel cost",
+    "target": [
+      5,
+      0
+    ],
+    "previous_target": [
+      4,
+      0
+    ],
+    "target_changed": true,
+    "belief": {
+      "location": [
+        8,
+        1
+      ],
+      "confidence": 0.22099707396639384,
+      "entropy_bits": 3.896979591733515,
+      "status": {
+        "ready": 0.3333333333333333,
+        "stranded": 0.3333333333333333,
+        "damaged": 0.3333333333333333
+      },
+      "recoveries": 0
+    },
+    "return_energy": 4,
+    "battery": 27,
+    "time_remaining": 163,
+    "score": 0.6094492224574855,
+    "belief_mass": 0.04157487040958092,
+    "novelty": 0.5,
+    "travel_steps": 1,
+    "required_energy": 6
+  },
+  "interpretation": "Holding map, resources and clue consumption fixed, the new evidence changes the next movement target."
+}

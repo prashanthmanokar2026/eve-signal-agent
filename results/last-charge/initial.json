@@ -1,0 +1,79 @@
+{
+  "observation": {
+    "position": [
+      0,
+      0
+    ],
+    "battery": 8,
+    "time_remaining": 180,
+    "actions": 0,
+    "terrain": [
+      {
+        "cell": [
+          0,
+          0
+        ],
+        "kind": "C"
+      },
+      {
+        "cell": [
+          1,
+          0
+        ],
+        "kind": "."
+      },
+      {
+        "cell": [
+          0,
+          1
+        ],
+        "kind": "."
+      }
+    ],
+    "clues": [],
+    "contact": null,
+    "outcome": "searching"
+  },
+  "briefing": {
+    "width": 11,
+    "height": 8,
+    "name": "The Last Charge",
+    "start": [
+      0,
+      0
+    ],
+    "battery_capacity": 20,
+    "time_budget": 180,
+    "action_costs": {
+      "move": [
+        1,
+        1
+      ],
+      "scan": [
+        2,
+        1
+      ],
+      "investigate": [
+        1,
+        1
+      ],
+      "recharge": [
+        0,
+        3
+      ],
+      "end": [
+        0,
+        0
+      ]
+    },
+    "sensor": {
+      "outlier_rate": 0.15
+    },
+    "mission_time": 0,
+    "initial_signal": {
+      "direction": "E",
+      "strength": 0.4,
+      "timestamp": 0
+    }
+  }
+}

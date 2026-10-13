@@ -1,0 +1,56 @@
+{
+  "name": "False Echo",
+  "seed": 19,
+  "grid": [
+    "C.........",
+    "...#......",
+    "...#..#...",
+    "......#...",
+    "..#.......",
+    "..#....C..",
+    "..........",
+    ".....#...."
+  ],
+  "start": [
+    0,
+    0
+  ],
+  "eve": [
+    2,
+    6
+  ],
+  "clues": [
+    [
+      4,
+      0
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "eve_status": "damaged",
+  "battery_capacity": 36,
+  "time_budget": 170,
+  "sensor": {
+    "outlier_rate": 0.3
+  },
+  "initial_signal": {
+    "coordinates": [
+      8,
+      1
+    ],
+    "strength": 0.98,
+    "timestamp": 0
+  },
+  "mission_time": 0,
+  "max_actions": 200
+}

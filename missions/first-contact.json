@@ -1,0 +1,48 @@
+{
+  "name": "First Contact",
+  "seed": 7,
+  "grid": [
+    "C........",
+    "..##.....",
+    ".....#...",
+    ".#...#...",
+    ".#.......",
+    ".....C...",
+    "...#....."
+  ],
+  "start": [
+    0,
+    0
+  ],
+  "eve": [
+    7,
+    5
+  ],
+  "clues": [
+    [
+      3,
+      0
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "eve_status": "stranded",
+  "battery_capacity": 34,
+  "time_budget": 140,
+  "sensor": {
+    "outlier_rate": 0.12
+  },
+  "initial_signal": {
+    "direction": "E",
+    "strength": 0.55,
+    "timestamp": 0
+  },
+  "mission_time": 0,
+  "max_actions": 200
+}
