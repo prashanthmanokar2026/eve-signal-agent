@@ -7,3 +7,7 @@ __pycache__/
 .pytest_cache/
 results/run/
 *.log
+results/ci-run/
+results/baseline-demo/
+.vscode/
+.idea/
